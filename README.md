@@ -10,7 +10,7 @@
 해결 방안
 
 학습지 할당
--- 유니크 인덱스로 중복 할당 방지
+- 유니크 인덱스로 중복 할당 방지
 CREATE UNIQUE INDEX uk_student_workbook ON student_workbooks (student_id, workbook_id);
 
 답안 제출
@@ -32,12 +32,12 @@ CREATE UNIQUE INDEX uk_student_workbook ON student_workbooks (student_id, workbo
 - 캐시 적용
 
 인덱스 최적화
--- 조회 성능 향상을 위한 인덱스
+- 조회 성능 향상을 위한 인덱스
 CREATE INDEX idx_problem_search ON problems (unit_code, level, problem_type, deleted_at);
 CREATE INDEX idx_workbook_teacher ON workbooks (teacher_id, deleted_at);
 
 통계 배치 처리
-스프링 스케쥴 / cron job 등을 통한 배치 처리
+- 스프링 스케쥴 / cron job 등을 통한 배치 처리
 
 ## 2. ERD
 ![Untitled diagram-2024-11-24-232232](https://github.com/user-attachments/assets/d868d781-9032-4514-a0c7-c693654b211d)
