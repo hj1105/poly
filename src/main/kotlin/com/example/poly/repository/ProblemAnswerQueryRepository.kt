@@ -1,6 +1,5 @@
 package com.example.poly.repository
 
-import com.example.poly.domain.ProblemAnswerStat
 import com.example.poly.repository.entity.ProblemAnswer
 import com.example.poly.repository.entity.QProblemAnswer
 import com.querydsl.core.types.Projections

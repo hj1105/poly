@@ -1,4 +1,4 @@
-package com.example.poly.domain
+package com.example.poly.repository
 
 data class ProblemAnswerStat(
     val problemId: Long,
