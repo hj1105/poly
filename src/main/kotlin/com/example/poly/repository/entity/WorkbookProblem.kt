@@ -14,13 +14,13 @@ import jakarta.persistence.*
     ]
 )
 class WorkbookProblem(
-    @Column(nullable = false)
+    @Column(name = "workbook_id", nullable = false)
     val workbookId: Long,
 
-    @Column(nullable = false)
+    @Column(name = "problem_id", nullable = false)
     val problemId: Long,
 
-    @Column(nullable = false)
+    @Column(name = "order_number", nullable = false)
     val orderNumber: Int,
 
     @Column(nullable = false)

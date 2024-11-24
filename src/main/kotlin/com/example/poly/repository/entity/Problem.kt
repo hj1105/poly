@@ -21,13 +21,13 @@ class Problem(
     @Column(nullable = false)
     val answer: String,
 
-    @Column(nullable = false)
+    @Column(name = "unit_code", nullable = false)
     val unitCode: String,
 
     @Column(nullable = false)
     val level: Int,
 
-    @Column(nullable = false)
+    @Column(name = "problem_type", nullable = false)
     @Enumerated(EnumType.STRING)
     val problemType: ProblemType
 ) : BaseEntity()

@@ -15,15 +15,15 @@ import jakarta.persistence.Table
     ]
 )
 class ProblemAnswer(
-    @Column(nullable = false)
+    @Column(name = "student_workbook_id", nullable = false)
     val studentWorkbookId: Long,
 
-    @Column(nullable = false)
+    @Column(name = "problem_id", nullable = false)
     val problemId: Long,
 
     @Column(nullable = false)
     val studentAnswer: String,
 
-    @Column(nullable = false)
+    @Column(name = "is_correct", nullable = false)
     val isCorrect: Boolean
 ) : BaseEntity()

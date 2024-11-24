@@ -11,6 +11,6 @@ class Workbook(
     @Column(nullable = false)
     val name: String,
 
-    @Column(nullable = false)
+    @Column(name = "teacher_id", nullable = false)
     val teacherId: Long
 ) : BaseEntity()

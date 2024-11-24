@@ -18,9 +18,9 @@ import jakarta.persistence.*
     ]
 )
 class StudentWorkbook(
-    @Column(nullable = false)
+    @Column(name = "student_id", nullable = false)
     val studentId: Long,
 
-    @Column(nullable = false)
+    @Column(name = "workbook_id", nullable = false)
     val workbookId: Long
 ) : BaseEntity()
